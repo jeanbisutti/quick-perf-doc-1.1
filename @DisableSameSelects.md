@@ -1,0 +1,1 @@
+The test will fail if at least two same SELECT statements are executed.
