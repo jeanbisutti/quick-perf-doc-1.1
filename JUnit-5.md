@@ -28,7 +28,7 @@ In the case of Maven, you can add the following dependency management:
             <dependency>
                 <groupId>org.quickperf</groupId>
                 <artifactId>quick-perf-bom</artifactId>
-                <version>1.0.1</version>
+                <version>1.1.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

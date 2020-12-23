@@ -297,7 +297,7 @@ To be able to use the [ProfileJvm](#profilejvm) and [ExpectNoJvmIssue](#expectno
 <dependency>
    <groupId>org.quickperf</groupId>
    <artifactId>quick-perf-jfr-annotations</artifactId>
-   <version>1.0.1</version>
+   <version>1.1.0</version>
    <scope>test</scope>
 </dependency>
 ```

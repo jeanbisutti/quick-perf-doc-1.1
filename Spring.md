@@ -22,7 +22,7 @@ Add one of the following dependencies below.
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4-spring5</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -32,7 +32,7 @@ Add one of the following dependencies below.
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4-spring4</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -42,7 +42,7 @@ Add one of the following dependencies below.
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4-spring3</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -87,7 +87,7 @@ With Spring Boot 1, add the following dependency
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-springboot1-sql-starter</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -97,7 +97,7 @@ With Spring Boot 2, use this dependency
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-springboot2-sql-starter</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -124,7 +124,7 @@ With Spring 4 add
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-sql-spring4</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -134,7 +134,7 @@ With Spring 5 add
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-sql-spring5</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <scope>test</scope>
 </dependency>
 ```
