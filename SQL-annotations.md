@@ -79,7 +79,6 @@ We recommend configuring the following SQL global annotations:
 |[@ExpectJdbcBatching](./@ExpectJdbcBatching)                                                        | JDBC batching is enabled                                      |
 |[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)                                      | Max query execution time                                      |
 |[@DisableStatements](./@DisableStatements)                                                          | Disables java.sql.Statement                                   |
-|[@DisableStatements](./@DisableStatements)                                                          | Disables java.sql.Statement                                   |
 |[@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)                      | Disables queries without bind variables                       |
 |[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                                | Disable like with leading wildcard                            |
 
@@ -120,7 +119,7 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
               , disableLikeWithLeadingWildcard()
 
                 // Not relevant with an in-memory database used for testing purpose
-              , expectMaxQueryExecutionTime( 30)
+              , expectMaxQueryExecutionTime(30)
 
               , disableStatements()
 
