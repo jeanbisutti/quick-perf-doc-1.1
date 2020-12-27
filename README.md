@@ -17,7 +17,10 @@
 ## JUnit 5 & JVM
 
 
-## Build
+## Build & CI
+
+
+* Update m-source-p to 3.2.1 that produces reproducible output [*@hboutemy*](https://github.com/hboutemy)
 
 
 # 🐛 Bug fixes
@@ -27,7 +30,12 @@
 
 ## SQL
 
+## Build
+* Add JDK 15 build [*@jeanbisutti*](https://github.com/jeanbisutti)
+* Ability to deploy with a release profile without having to install with default profile previously [*@hboutemy*](https://github.com/hboutemy)
+
 
 
 # 👍 Contributors
+[@hboutemy](https://github.com/hboutemy) <br>
 [@jeanbisutti](https://github.com/jeanbisutti) <br>
