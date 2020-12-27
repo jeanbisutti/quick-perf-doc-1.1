@@ -1,1 +1,0 @@
-📙 **[QuickPerf documentation](QuickPerf)**

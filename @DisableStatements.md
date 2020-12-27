@@ -1,3 +1,0 @@
-The _DisableStatements_ annotation ensures a [java.sql.PreparedStatement](https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PreparedStatement.html) or a [java.sql.CallableStatement](https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html) is used to execute the queries. The test will fail with a [java.sql.Statement](https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html).
-
-We recommend configuring this annotation with a [global scope](QuickPerf#annotation-scopes).
