@@ -26,7 +26,7 @@ To promote performance at the beginning of application development, you can
   * **Spot long queries** with [@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)
   * **Avoid SQL statements without bind parameters**. Detect them by using [@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)
   * **Avoid SQL statements having a LIKE pattern starting with a wildcard**. Identify them by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
-
+* **Avoid database connection leaks** by using [@ExpectNoConnectionLeak](./@ExpectNoConnectionLeak)
 * ...
 
 
@@ -62,9 +62,6 @@ For example, QuickPerf displays the following message when an N+1 select is pres
 
 [Apply SQL annotations on methods](#apply-sql-annotations-on-test-methods)<br>
 
-[Test early, test often](#test-early-test-often)<br>
-
-
 ## Configure global annotations
 
 You may want to quickly promote performance without adding some SQL annotations on each test method. Or let's suppose that you add QuickPerf to an application having automatic tests. 
@@ -81,6 +78,7 @@ We recommend configuring the following SQL global annotations:
 |[@DisableStatements](./@DisableStatements)                                                          | Disables java.sql.Statement                                   |
 |[@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)                      | Disables queries without bind variables                       |
 |[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                                | Disable like with leading wildcard                            |
+|[@ExpectNoConnectionLeak](./@ExpectNoConnectionLeak)                                                | Detect database connection leaks                              |
 
 A _SqlAnnotationBuilder_ class allows you to configure SQL global annotations easily.
 
@@ -124,6 +122,8 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
               , disableStatements()
 
               , disableQueriesWithoutBindParameters()
+              
+              , expectNoConnectionLeak()
 
         );
 
@@ -239,6 +239,9 @@ Several project examples combining Testcontainers and QuickPerf are available [h
             <td> <a href="./@DisableQueriesWithoutBindParameters">@DisableQueriesWithoutBindParameters</a> </td>
             <td> <a href="./@EnableQueriesWithoutBindParameters">@EnableQueriesWithoutBindParameters</a> </td>
        </tr>
+       <tr>
+            <td> <a href="./@ExpectNoConnectionLeak">@ExpectNoConnectionLeak</a> </td>
+       </tr>            
     </tbody>
 </table>
 
@@ -301,4 +304,4 @@ You can also use [@DisplayAppliedAnnotations](Core-annotations#DisplayAppliedAnn
 |[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)             | Enables like with leading wildcard     |
 |[@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters) | Disables queries without bind variables|
 |[@EnableQueriesWithoutBindParameters](./@EnableQueriesWithoutBindParameters)   | Enables queries without bind variables |
-
+|[@ExpectNoConnectionLeak](./@ExpectNoConnectionLeak)                                                | Detect database connection leaks                              |
