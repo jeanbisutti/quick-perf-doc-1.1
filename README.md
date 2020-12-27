@@ -9,7 +9,7 @@
 ## JVM
 
 ## SQL
-* Add [ExpectNoConnectionLeak annotation](https://github.com/jeanbisutti/quick-perf-doc-1.1/wiki/@ExpectNoConnectionLeak)
+* Add [ExpectNoConnectionLeak](https://github.com/jeanbisutti/quick-perf-doc-1.1/wiki/@ExpectNoConnectionLeak) annotation
 
 ## JUnit 5
 
