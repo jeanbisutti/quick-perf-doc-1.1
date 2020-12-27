@@ -30,11 +30,6 @@
 
 ## SQL
 
-## Build
-* Add JDK 15 build [*@jeanbisutti*](https://github.com/jeanbisutti)
-* Ability to deploy with a release profile without having to install with default profile previously [*@hboutemy*](https://github.com/hboutemy)
-
-
 
 # 👍 Contributors
 [@hboutemy](https://github.com/hboutemy) <br>
